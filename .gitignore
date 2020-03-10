@@ -1,4 +1,6 @@
 node_modules/
 .parcel-cache/
-build/pages
-build/scripts
+build/*
+!build/assets
+!build/manifest.json
+
