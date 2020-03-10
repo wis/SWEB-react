@@ -1,0 +1,19 @@
+{
+  "name": "sweb-react",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "parcel": "^2.0.0-alpha.3.2"
+  },
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "scripts": {
+    "start": "concurrently yarn:watch-* --kill-others --kill-others-on-fail",
+    "bin": "~/d/contribute/parcel/packages/core/parcel/src/bin.js",
+    "watch": "yarn run bin watch",
+    "watch-pages": "yarn run watch --dist-dir build/pages *.html",
+    "watch-scripts": "yarn run watch --dist-dir build/scripts --no-hmr ./src/*.ts"
+  },
+  "license": "MIT"
+}
