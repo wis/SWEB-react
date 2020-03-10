@@ -12,4 +12,6 @@ React Fast Refresh works for nested components, e.g `Componentx`,
 only when the web page is served form with a server (with the `serve` command)
 and has an `http://` URL scheme, and not when the web page is that's of an opened 
 HTML file from disk with a `file://` URL scheme or of a browser extension with a 
-`moz-extension://` or `chorme-extension://` URL scheme (that's built with the `watch` command).
+`moz-extension://` or `chorme-extension://` URL scheme (that's built with the `watch` command),
+the bundler, Parcel 2, loads the updated modules/components and refreshes the console
+but the components don't get updated.
