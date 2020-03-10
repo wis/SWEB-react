@@ -8,4 +8,8 @@ Simple WebExtensions Boilerplate ➡ React
 
 # Issues
 only full page refresh is working for top level components like `Options` and `Popup`,
-React Fast Refresh is not working with nested components, e.g `Componentx`, when the web page is not served form with a server and has an `https?://` URL scheme, e.g a web page is that's of an opened file from disk with a `file://` URL scheme or of a browser extension with a  `moz-extension://` or `chorme-extension://` URL scheme.
+React Fast Refresh only works for nested components, e.g `Componentx`,
+only when the web page is not served form with a server (with the `serve` command)
+and has an `http://` URL scheme, and not when the web page is that's of an opened file
+from disk with a `file://` URL scheme or of a browser extension with a 
+`moz-extension://` or `chorme-extension://` URL scheme.
