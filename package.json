@@ -12,7 +12,7 @@
     "start": "concurrently yarn:watch-* --kill-others --kill-others-on-fail",
     "bin": "~/d/contribute/parcel/packages/core/parcel/src/bin.js",
     "watch": "yarn run bin watch",
-    "watch-pages": "yarn run watch --dist-dir build/pages *.html",
+    "watch-pages": "yarn run watch --public-url '/pages' --dist-dir build/pages *.html",
     "watch-scripts": "yarn run watch --dist-dir build/scripts --no-hmr ./src/*.ts"
   },
   "license": "MIT"
