@@ -2,7 +2,7 @@
   "name": "sweb-react",
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^2.0.0-beta.1"
   },
   "dependencies": {
     "react": "^16.13.0",
@@ -10,10 +10,15 @@
   },
   "scripts": {
     "start": "concurrently npm:watch-* --kill-others --kill-others-on-fail",
-    "bin": "~/d/contribute/parcel/packages/core/parcel/src/bin.js",
-    "watch": "npm run bin watch",
-    "watch-pages": "npm run watch --public-url '/pages' --dist-dir build/pages *.html",
-    "watch-scripts": "npm run watch --dist-dir build/scripts --no-hmr ./src/*.ts"
+    "build": "concurrently npm:build-* --kill-others --kill-others-on-fail",
+    "binn": "~/d/contribute/parcel/packages/core/parcel/src/bin.js",
+    "watchh": "npm run bin watch",
+    "watch": "parcel watch",
+    "help": "parcel --help",
+    "watch-pages": "cd build/pages && parcel watch --public-url . ../../*.html --dist-dir ./",
+    "build-pages": "cd build/pages && parcel build --public-url . ../../*.html --dist-dir ./",
+    "watch-scripts": "parcel watch --dist-dir build/scripts --no-hmr ./src/*.ts",
+    "build-scripts": "parcel build --dist-dir build/scripts ./src/*.ts"
   },
   "license": "MIT"
 }

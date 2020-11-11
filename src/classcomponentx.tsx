@@ -4,7 +4,7 @@ export class ClassComponentx extends React.Component {
   render() {
     return (
       <>
-      <div>hello !</div>
+      <div>this sub-component hot-reloads!</div>
       </>
     );
   }
