@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
-import Componentxjs from "./componentxjs";
+import Componentxjs from "../componentxjs";
 
 class Background extends React.Component {
   render() {

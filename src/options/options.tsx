@@ -1,6 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { Componentx } from "./componentx";
+import { Componentx } from "../componentx";
 
 class Options extends React.Component {
   render() {

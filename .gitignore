@@ -1,6 +1,7 @@
 node_modules/
 .parcel-cache/
 build/*
-!build/assets
-!build/manifest.json
-
+/*.js.map
+/*-script.js*
+/*.*.js
+/*.html

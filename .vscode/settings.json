@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    ".parcel-cache/**": true,
+    "*.*.js*": true,
+    "*-script.js*": true,
+    "*.js.map": true,
+    "./*.html": true,
+    "node_modules/**": true,
+    "scripts/**": true,
+    "yarn.lock": true,
+  }
+}

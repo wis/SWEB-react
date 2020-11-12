@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { Componentx } from "./componentx";
-import { ClassComponentx } from "./classcomponentx";
+import { Componentx } from "../componentx";
+import { ClassComponentx } from "../classcomponentx";
 
 class Popup extends React.Component {
   render() {
