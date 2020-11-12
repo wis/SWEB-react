@@ -23,5 +23,8 @@
   "license": "MIT",
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
 }
