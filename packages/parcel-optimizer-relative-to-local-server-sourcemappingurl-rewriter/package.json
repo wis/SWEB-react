@@ -1,0 +1,9 @@
+{
+  "name": "parcel-optimizer-relative-to-local-server-sourcemappingurl-rewriter",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "parcel": ">=2.0.0-beta.1"
+  }
+}

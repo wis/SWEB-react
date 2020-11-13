@@ -2,7 +2,9 @@
   "name": "sweb-react",
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "parcel": "^2.0.0-beta.1"
+    "http-server": "^0.12.3",
+    "parcel": "^2.0.0-beta.1",
+    "parcel-optimizer-relative-to-local-server-sourcemappingurl-rewriter": "0.0.1"
   },
   "dependencies": {
     "@types/react": "^16.9.56",
@@ -11,13 +13,13 @@
     "react-dom": "^17.0.1"
   },
   "scripts": {
-    "start": "yarn run clean-dist; concurrently npm:watch-* --kill-others --kill-others-on-fail",
+    "start": "yarn run clean-dist; concurrently npm:watch-* 'http-server --silent' --kill-others --kill-others-on-fail",
     "build": "yarn run clean-dist; concurrently npm:build-* --kill-others --kill-others-on-fail",
     "watch-pages": "parcel watch --public-url . ./src/*.html --dist-dir .",
     "build-pages": "parcel build --public-url . ./src/*.html --dist-dir .",
     "watch-scripts": "parcel watch --dist-dir . --no-hmr ./src/*.ts",
     "build-scripts": "parcel build --dist-dir . ./src/*.ts",
-    "clean-dist": "rm *.*.js*; rm *.html",
+    "clean-dist": "rm *-script.js *.*.js*; rm *.html *.js.map",
     "help": "parcel --help"
   },
   "license": "MIT",
@@ -26,5 +28,9 @@
   ],
   "resolutions": {
     "node-forge": "0.10.0"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": "true"
 }
