@@ -5,3 +5,5 @@ build/*
 /*-script.js*
 /*.*.js
 /*.html
+
+yarn-error.log
