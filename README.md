@@ -1,5 +1,6 @@
 # SWEB-react
 Simple WebExtensions Boilerplate ➡ React
+![WebExtensions Fox Logo](assets/icons/icon-128.png)
 
 # Setup
 run `yarn install` to install required npm dependencies
@@ -31,6 +32,6 @@ as you can see from the date of that comment and my comment before it, I've been
 ## why is the dist directory the top level directory of the project and not a sub-directory?
 so we can load the extension from the top level directory of the project so that devtools then can fetch and load the source files from sub-directories like [src](src) and sourcemaps will work correctly.
 
-## more issues with sourcemaps in Chromium devtools
+## remaining issues with sourcemaps in Chromium
 Chromium seems to be caching sourcemaps and not updating them when the page auto reloads, even when hard-reloading with a Ctrl+Shift+r the sourcemaps are not updated.
 so for now I will be using (and recommending using) Firefox for development.
